@@ -68,7 +68,10 @@ function atv_08(){
     var tempo = window.prompt("Informe o tempo da viagem em horas");
     var velocidade = window.prompt("Informe a velocidade média da viagem: ");
 
-    document.getElementById("resultado").innerHTML = "Quantidade de litros gasta: " + (velocidade/tempo) * 12;
+    var distancia = velocidade * tempo;
+
+
+    document.getElementById("resultado").innerHTML = "Quantidade de litros gasta: " + distancia / 12;
 
 }
 
